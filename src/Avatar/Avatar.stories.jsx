@@ -3,6 +3,14 @@ import { Avatar } from './Avatar';
 export default {
   title: 'Design System/Avatar',
   component: Avatar,
+  argTypes: {
+    size: {
+      control: {
+        type: 'select',
+      },
+      options: ['large', 'medium', 'small', 'tiny'],
+    }
+  }
 };
 
 export const Standard = {
@@ -66,3 +74,12 @@ export const Large = {
     </>
   ),
 };
+
+export const Controls = {
+  args: {
+    loading: false,
+    size: 'tiny',
+    username: 'Dominic Nguyen',
+    src: 'https://avatars2.githubusercontent.com/u/263385',
+  }
+}
